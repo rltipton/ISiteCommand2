@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  /* Construction / Earthwork Color Palette (safety orange/amber, slate, charcoal) */
+  --color-brand-orange: #f97316;
+  --color-brand-darkorange: #ea580c;
+  --color-brand-coal: #1e293b;
+  --color-brand-sand: #fef08a;
+  --color-brand-cream: #fafaf9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fafaf9;
+  color: #1e293b;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+@keyframes slow-pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 6px rgba(16, 185, 129, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    background-color: #059669; /* emerald-600 */
+    border-color: #10b981;
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(16, 185, 129, 0.95), 0 0 10px rgba(16, 185, 129, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background-color: #10b981; /* emerald-500 */
+    border-color: #34d399;
+  }
+}
+
+.animate-slow-pulse-glow {
+  animation: slow-pulse-glow 2.5s infinite ease-in-out;
+}
+

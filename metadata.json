@@ -1,0 +1,6 @@
+{
+  "name": "TJ Darley Construction",
+  "description": "Premium earthwork solutions across Middle Georgia since 2008. Specializing in professional site development, excavation, grading, drainage solutions, and erosion control.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
